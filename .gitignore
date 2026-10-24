@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+*.zip
+.DS_Store
+automotive_before_remove_ddl.sql

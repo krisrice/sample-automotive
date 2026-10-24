@@ -1,0 +1,151 @@
+{
+  "release": "AUTOPARTS_DEMO_20261023_V1",
+  "created_on": "2026-10-23",
+  "database_execution": "PASS: reference release installed and validated with SQLcl on Oracle Database 23.26.3.0.0.",
+  "tables": 63,
+  "views": 6,
+  "rows_total": 211790,
+  "parts": 12000,
+  "vehicles": 200,
+  "makes": 9,
+  "models": 40,
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "foreign_keys": 89,
+  "foreign_key_indexes": 72,
+  "checks": {
+    "stock_movements_reconcile": {
+      "violations": 0,
+      "passed": true
+    },
+    "open_order_reservations_reconcile": {
+      "violations": 0,
+      "passed": true
+    },
+    "invoice_totals_reconcile": {
+      "violations": 0,
+      "passed": true
+    },
+    "invoice_line_values_reconcile": {
+      "violations": 0,
+      "passed": true
+    },
+    "payments_do_not_exceed_invoices": {
+      "violations": 0,
+      "passed": true
+    },
+    "receipts_equal_received_po_quantity": {
+      "violations": 0,
+      "passed": true
+    },
+    "shipments_equal_shipped_order_quantity": {
+      "violations": 0,
+      "passed": true
+    },
+    "returns_do_not_exceed_shipped_quantity": {
+      "violations": 0,
+      "passed": true
+    },
+    "crossrefs_match_type_and_vehicle": {
+      "violations": 0,
+      "passed": true
+    },
+    "sales_parts_fit_customer_vehicle": {
+      "violations": 0,
+      "passed": true
+    },
+    "shipments_use_correct_warehouse": {
+      "violations": 0,
+      "passed": true
+    },
+    "all_parts_have_fitments": {
+      "violations": 0,
+      "passed": true
+    },
+    "all_tables_have_rows": {
+      "violations": 0,
+      "passed": true
+    }
+  },
+  "local_validation": "PASS: SQLite constraints, business invariants, and reporting-view smoke tests.",
+  "table_counts": {
+    "AP_DATASET_VERSION": 1,
+    "AP_COUNTRIES": 3,
+    "AP_CURRENCIES": 1,
+    "AP_UNITS": 2,
+    "AP_SOURCES": 2,
+    "AP_PART_CATEGORIES": 8,
+    "AP_POSITIONS": 7,
+    "AP_PART_TYPES": 30,
+    "AP_PART_BRANDS": 8,
+    "AP_PART_STATUSES": 2,
+    "AP_VEHICLE_MAKES": 9,
+    "AP_VEHICLE_MODELS": 40,
+    "AP_MODEL_YEARS": 5,
+    "AP_VEHICLES": 200,
+    "AP_VEHICLE_NOTES": 200,
+    "AP_WARRANTY_POLICIES": 2,
+    "AP_PARTS": 12000,
+    "AP_PART_FITMENTS": 12000,
+    "AP_PART_DIMENSIONS": 12000,
+    "AP_ATTRIBUTE_DEFS": 3,
+    "AP_PART_ATTRIBUTES": 36000,
+    "AP_PART_PACKAGING": 12000,
+    "AP_PRICE_LISTS": 2,
+    "AP_PART_PRICES": 24000,
+    "AP_PART_CROSSREFS": 6000,
+    "AP_KITS": 400,
+    "AP_KIT_ITEMS": 1000,
+    "AP_PAYMENT_TERMS": 3,
+    "AP_SUPPLIERS": 8,
+    "AP_SUPPLIER_CONTACTS": 8,
+    "AP_SUPPLIER_ADDRESSES": 8,
+    "AP_SUPPLIER_PARTS": 12000,
+    "AP_SUPPLIER_PRICE_BREAKS": 24000,
+    "AP_WAREHOUSES": 3,
+    "AP_WAREHOUSE_ZONES": 9,
+    "AP_STORAGE_BINS": 450,
+    "AP_INVENTORY_LOTS": 12000,
+    "AP_STOCK_BALANCES": 12000,
+    "AP_STOCK_MOVEMENTS": 13955,
+    "AP_REORDER_POLICIES": 12000,
+    "AP_CUSTOMER_TIERS": 3,
+    "AP_CUSTOMERS": 300,
+    "AP_CUSTOMER_ADDRESSES": 300,
+    "AP_CUSTOMER_VEHICLES": 300,
+    "AP_PURCHASE_ORDERS": 24,
+    "AP_PO_LINES": 240,
+    "AP_RECEIPTS": 24,
+    "AP_RECEIPT_LINES": 240,
+    "AP_CARRIERS": 3,
+    "AP_SALES_ORDERS": 600,
+    "AP_SO_LINES": 1800,
+    "AP_SHIPMENTS": 480,
+    "AP_SHIPMENT_LINES": 1440,
+    "AP_INVOICES": 480,
+    "AP_INVOICE_LINES": 1440,
+    "AP_PAYMENTS": 400,
+    "AP_RETURN_REASONS": 4,
+    "AP_RETURNS": 40,
+    "AP_RETURN_LINES": 40,
+    "AP_INSPECTIONS": 40,
+    "AP_WARRANTY_CLAIMS": 20,
+    "AP_STOCK_COUNTS": 3,
+    "AP_STOCK_COUNT_LINES": 1200
+  },
+  "sources": [
+    {
+      "name": "Curated real make/model/year labels",
+      "notes": "Manually curated, not manufacturer trim/engine data."
+    },
+    {
+      "name": "Deterministic synthetic parts and business records",
+      "notes": "All brands, SKUs, prices and fitments are illustrative."
+    }
+  ]
+}
